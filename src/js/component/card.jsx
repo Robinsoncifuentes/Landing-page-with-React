@@ -6,12 +6,14 @@ export function Card(props) {
 			<img src={props.imgURL} />
 			<div className="card-body">
 				<p>{props.description}</p>
-				<a
-					className="btn btn-primary btn-sm d-flex justify-content-center"
-					href=""
-					role="button">
-					{props.buttonLabel}
-				</a>
+				<div className="card-footer text-muted">
+					<a
+						className="btn btn-primary btn-sm d-flex justify-content-center"
+						href=""
+						role="button">
+						{props.buttonLabel}
+					</a>
+				</div>
 			</div>
 		</div>
 	);
